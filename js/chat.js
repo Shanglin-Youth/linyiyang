@@ -1,4 +1,4 @@
-//本站源码下载：http://github.com/dengcao/dc-aichat
+
 
 var contextarray = [];
 
@@ -81,7 +81,7 @@ function insertPresetText() {
 }
 
 function initcode() {
-    console['\x6c\x6f\x67']("本站源码下载：http://github.com/dengcao/dc-aichat");
+    console['\x6c\x6f\x67']("");
 }
 
 function copyToClipboard(text) {
@@ -177,7 +177,7 @@ $(document).ready(function () {
             return;
         }
 
-        var loading = layer.msg('AI助手正在组织语言，请稍等片刻...', {
+        var loading = layer.msg('请稍等片刻，让林一阳想想...', {
             icon: 16,
             shade: 0.4,
             time: false //取消自动关闭
@@ -229,7 +229,7 @@ $(document).ready(function () {
             es.onmessage = function (event) {
                 if (isstarted) {
                     layer.close(loading);
-                    $("#kw-target").val("请耐心等待AI把话说完……");
+                    $("#kw-target").val("请耐心等我把话说完……");
                     $("#kw-target").attr("disabled", true);
                     autoresize();
                     $("#ai-btn").html('<i class="iconfont icon-wuguan"></i>中止');
